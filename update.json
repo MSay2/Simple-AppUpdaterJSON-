@@ -2,7 +2,8 @@
     "version": 
     [
         {
-            "latest": "2"
+            "latest": "2",
+            "url": "https://raw.githubusercontent.com/msay2/Simple-AppUpdaterJSON-/master/app.apk"
         }
     ]
 }
