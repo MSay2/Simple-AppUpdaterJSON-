@@ -1,9 +1,11 @@
 {
-    "version": 
+    "versionName": "2.0",
+    "versionCode": "20",
+    "url": "https://github.com/javiersantos/AppUpdater/releases",
+    "release": 
     [
-        {
-            "latest": "4",
-            "url": "https://raw.githubusercontent.com/msay2/Simple-AppUpdaterJSON-/master/app.apk"
-        }
+        "- Améliorations apportées",
+        "- Nouveau support !",
+        "- Corrections de quelques bogues"
     ]
 }
