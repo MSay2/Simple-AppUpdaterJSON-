@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity
 	// US - This line is for the code version of your application
 	public static final int version = 1;
 	
-	public static final int DIALOG_DOWNLOAD_PROGRESS = 0;
+	public static final int DIALOG_DOWNLOAD_PROGRESS = 1;
 	public static final String TAG = "MainActivity";
 	public static final String URL_JSON = "https://raw.githubusercontent.com/msay2/Simple-AppUpdaterJSON-/master/update.json";
 	
@@ -262,6 +262,25 @@ public class MainActivity extends AppCompatActivity
 		dialog = builder.create();
 		dialog.show();
 	}
+	
+	@Override
+    protected ProgressDialog onCreateDialog(int id) 
+	{
+        switch (id)
+		{
+			case DIALOG_DOWNLOAD_PROGRESS:
+				progressDialog = new ProgressDialog(this);
+				progressDialog.setMessage(getResources().getString(R.string.updater_downloading));
+				progressDialog.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
+				progressDialog.setCancelable(false);
+				progressDialog.dismiss();
+				progressDialog.show();
+				return progressDialog;
+
+			default:
+				return null;
+        }
+    }
 	
 	// Cette classe est pour le téléchargement de l'application (AsyncTast)
 	// This class is for downloading the application (AsyncTask)
