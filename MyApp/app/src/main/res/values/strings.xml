@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AppUpdater</string>
+    <string name="hello_world">Hello world!</string>
+	
+	<string name="updater_available_title">New update available !</string>
+	<string name="updater_available_description">The update %1$s is available. \n\nYou can benefit from the following features: </string>
+
+	<string name="updater_not_available_title">No update available !</string>
+	<string name="updater_not_available_description">You have the latest version of %1$s</string>
+
+	<string name="updater_btn_download">Download</string>
+	<string name="updater_btn_back">Back</string>
+	<string name="updater_btn_ok">Ok</string>
+
+	<string name="updater_downloading">Downloading…</string>
+
+</resources>

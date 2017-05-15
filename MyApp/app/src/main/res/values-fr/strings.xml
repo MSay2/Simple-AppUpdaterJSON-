@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+	<string name="updater_available_title">"Nouvelle mise à jour disponible"</string>
+	<string name="updater_available_description">"La mise à jour %1$s est disponible.\n\nVous pourrez bénéficier des fonctionnalités suivantes: "</string>
+
+	<string name="updater_not_available_title">"Aucune mise à jour disponible !"</string>
+	<string name="updater_not_available_description">"Vous possédez la dernière version disponible de %1$s"</string>
+
+	<string name="updater_btn_download">Télécharger</string>
+	<string name="updater_btn_back">Retour</string>
+	<string name="updater_btn_ok">Ok</string>
+
+	<string name="updater_downloading">Téléchargement en cours…</string>
+	
+</resources>
