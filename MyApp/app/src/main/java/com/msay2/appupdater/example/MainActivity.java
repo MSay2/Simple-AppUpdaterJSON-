@@ -161,8 +161,8 @@ public class MainActivity extends AppCompatActivity
 			{
 				if (result == 1) 
 				{
-					// Vous avez de cette ligne (c'est très important, s'il vous plaît ecrivez cette ligne)
-					// // You have this line (this is very important, please write this line)
+					// Vous devez ecrire cette ligne (c'est très important, s'il vous plaît ecrivez cette ligne)
+					// You have to write this line (this is very important, please write this line)
 					int foo = 0;
 					
 					String text = item.getVersionCode().toString();
@@ -173,12 +173,12 @@ public class MainActivity extends AppCompatActivity
 					// This line is for converting the String to Int
 					foo = Integer.parseInt(text);
 
-					// Cette ligne est comparé les deux nombres et voir qui est le plus grand ou plus petit
-					// // This line is compared the two numbers and see which is larger or smaller
+					// Cette ligne est le comparateur des deux nombres et voir qui est le plus grand ou plus petit
+					// This line is the comparator of the two numbers and see which is larger or smaller
 					if (version < foo)
 					{
 						// Cette ligne est pour afficher le dialogue de mise à jour disponible
-						// // This line is for displaying the available update dialog
+						// This line is for displaying the available update dialog
 						dialogYesUpdate(url, release);
 					}
 					else
@@ -221,7 +221,9 @@ public class MainActivity extends AppCompatActivity
 				@Override
 				public void onClick(DialogInterface dialog, int position)
 				{
-					new DownloadAsyntask().execute(url); //download manager for the new app
+					// Ligne d'execution pour le téléchargement
+					// Execution line for download
+					new DownloadAsyntask().execute(url);
 				}
 			})
 		    .setNegativeButton(getResources().getString(R.string.updater_btn_back), new DialogInterface.OnClickListener()
